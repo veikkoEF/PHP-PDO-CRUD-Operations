@@ -2,7 +2,7 @@
    "http://www.w3.org/TR/html4/strict.dtd">
 <HTML>
    <HEAD>
-      <TITLE>Test von PHP</TITLE>
+      <TITLE>Test from PHP</TITLE>
    </HEAD>
    <BODY>
       <?PHP

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <Title>Arbeit mit der Datenbank</Title>
+      <Title>Work with Database</Title>
    </head>
    <body> 
          <?PHP
@@ -9,10 +9,8 @@
            $pass = '';
            $db = new PDO( 'mysql:host=localhost;dbname=enterprise', $user, $pass );
            $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-          
-           $sql = "CREATE TABLE contact(KundenNr INTEGER PRIMARY KEY NOT NULL auto_increment, Firmenname VARCHAR(100), Ort VARCHAR(100));";
+           $sql = "CREATE TABLE contact(ID INTEGER PRIMARY KEY NOT NULL auto_increment, CompanyName VARCHAR(100), City VARCHAR(100));";
            $db ->exec($sql);
-           echo 'Die Tabelle "contact" wurde erfolgreich erstellt!'
       ?>
    </body>
    

@@ -8,8 +8,8 @@
            $user = 'root';
            $pass = '';
            $db = new PDO( 'mysql:host=localhost;dbname=enterprise', $user, $pass );
-           $statement = $db->prepare("UPDATE contact SET ort = ? where ort = ?");
-           $statement->execute(array('Hamburg', 'Muenchen')); 
+           $statement = $db->prepare("UPDATE contact SET city = ? where city = ?");
+           $statement->execute(array('Kiel', 'Hamburg')); 
          ?>
    </body>
    

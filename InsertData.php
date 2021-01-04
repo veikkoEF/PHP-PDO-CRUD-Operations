@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <Title>Arbeit mit der Datenbank</Title>
+      <Title>Work with Database</Title>
    </head>
    <body> 
          <?PHP
@@ -9,8 +9,8 @@
            $pass = '';
            $db = new PDO( 'mysql:host=localhost;dbname=enterprise', $user, $pass );
            
-           $statement = $db->prepare("INSERT INTO contact (Firmenname, Ort) VALUES (?, ?)");
-           $statement->execute(array('Fa Baier', 'Stuttgart'));   
+           $statement = $db->prepare("INSERT INTO contact (CompanyName, City) VALUES (?, ?)");
+           $statement->execute(array('Fa. Baier', 'Berlin'));   
          ?>
    </body>
    
